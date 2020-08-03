@@ -122,7 +122,7 @@ where `[exe_path]` is a directory containing the executable `fit_table`.
 
 **Outputs:**
  - **Several .root and .pdf files containing fits and identification probabilities**
- - **Files `rich_mat.txt` and `rich_err.txt` which can then be used by the multiplicities analysis framework (in analySIDIS_split)**
+ - **Files `rich_mat.txt` and `rich_err.txt` which can then be used by the multiplicities analysis framework (in `analySIDIS_split`)**
 
 ## [Python] submitJobs.py<a name="submitJobs.py" />
 
