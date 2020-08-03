@@ -1,0 +1,73 @@
+# type of analysis (K0L or iPhi)
+analysis: K0L
+
+# data file containing the reconstructed informations
+data_file: ../P09
+
+# data file template name
+data_template: h
+
+# data file template name
+data_firstfile_nb: 275478
+data_lastfile_nb: 275478
+
+# Fit type
+fit_type: pi
+
+# data file containing the histograms
+hist_file_phi: ./hist_incl_phi2.root
+hist_file_k0: ./hist_k0.root
+hist_file_lam: ./hist_lambda.root
+
+# data file containing the final results
+out_file: rich.root
+
+# remove the rich pipe from the sample
+remove_richpipe: true
+
+# difference allowed between proton threshold and real value
+thr_diff: 5
+
+# Options for LH cuts for identifying pions
+LH_pi_K: 1.0
+LH_pi_p: 1.0
+# LH_pi_e:
+# LH_pi_mu:
+LH_pi_bg: 2.0
+
+
+# Options for LH cuts for identifying kaons
+LH_K_pi: 1.06
+LH_K_p: 1.06
+# LH_K_e:
+# LH_K_mu:
+LH_K_bg: 2.0
+
+
+# Options for LH cuts for identifying protons below threshold ( comparing with bg )
+LH_bthr_p_pi: 1.
+LH_bthr_p_K: 1.
+# LH_bthr_p_p:
+# LH_bthr_p_e:
+# LH_bthr_p_mu:
+
+# Options for LH cuts for identifying protons above threshold
+LH_bthr_p_pi_bg: 2.3
+LH_bthr_p_K_bg: 3.0
+LH_bthr_m_pi_bg: 2.2
+LH_bthr_m_K_bg: 2.9
+
+# Options for LH cuts for identifying protons above threshold
+LH_athr_p_pi: 1.
+LH_athr_p_K: 1.
+# LH_athr_p_e:
+# LH_athr_p_mu:
+LH_athr_p_bg: 1.
+
+# Change the maximum number of fit attempts when results for the fractions are at the limit of their range
+max_retry: 100
+
+# Line width of the fit in the fit results
+line_width: 2
+
+sidebins: false
